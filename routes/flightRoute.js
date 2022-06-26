@@ -3,11 +3,12 @@ const express = require("express");
 const router = express.Router();
 const controller = require("../controllers/flightController");
 
-router.get("/", controller.example);
+router.patch("/update", controller.update);
 router.post("/add", controller.add);
 router.get("/all", controller.all);
 router.get("/single", controller.single);
-router.get("/", controller.example);
+router.delete("/delete", controller.delete);
+
 
 module.exports = router;
 
